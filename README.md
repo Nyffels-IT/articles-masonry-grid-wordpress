@@ -5,7 +5,7 @@ A lightwight, open source masonry grid for your posts. Created and managed by Ny
 1. Install the application: 
 - Wordpress library (COMING SOON)
 - Download and manual install the files
-2. Active the plugin.
+2. Activate the plugin.
 3. Use the shortcode on the place you want to use it. 
 
 ## Usage 
