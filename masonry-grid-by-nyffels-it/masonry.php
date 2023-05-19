@@ -11,7 +11,7 @@
 * License: Apache 2.0
 **/
 
-add_shortcode('monastry-grid', 'mgnyf_retrieve_monastry_grid');
+add_shortcode('masonry-grid', 'mgnyf_retrieve_monastry_grid');
 add_action('wp_enqueue_scripts', 'mgnyf_add_css' );
 add_action('init', 'mgnyf_add_script');
 
