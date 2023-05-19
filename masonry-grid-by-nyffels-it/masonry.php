@@ -15,7 +15,7 @@ add_shortcode('monastry-grid', 'mgnyf_retrieve_monastry_grid');
 add_action('wp_enqueue_scripts', 'mgnyf_add_css' );
 add_action('init', 'mgnyf_add_script');
 
-function mgnyf_retrieve_monastry_grid() {
+function mgnyf_retrieve_monastry_grid($background_color = "#000000", $font_color = "#FFFFFF") {
     echo '<script>console.log("The \"monastry grid\" plugin is an open sourced and free plugin created by Nyffels IT. Give us a visit at https://nyffels-it.be or contribute to the development of the plugin on the repository https://github.com/Nyffels-IT/masonry-grid-wordpress")</script>';
     $args = array(
         'nopaging' => true
@@ -34,8 +34,8 @@ function mgnyf_retrieve_monastry_grid() {
                         <a href=<?php echo $post->guid; ?> class="nyfit-masonry-grid-item">
                         <div class="nyfit-masonry-grid-item">
                             <div class="nyfit-masonry-grid-content">
-                                <div class="nyfit-masonry-grid-title" style="background-color: #232220">
-                                    <h3>
+                                <div class="nyfit-masonry-grid-title" style="background-color: <?php echo #background_color; ?>">
+                                    <h3 style="color: <?php echo #font_color; ?>">
                                         <?php echo $post->post_title; ?>
                                     </h3>
                                 </div>
