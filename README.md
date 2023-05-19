@@ -1,4 +1,4 @@
-# Articles Masonry Grid for Wordpress
+# Posts Masonry Grid for Wordpress
 A lightwight, open source masonry grid for your posts. Created and managed by Nyffels IT
 
 ## Installation 
