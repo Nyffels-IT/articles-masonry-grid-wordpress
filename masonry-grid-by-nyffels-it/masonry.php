@@ -1,8 +1,8 @@
 <?php
 /**
-* Plugin Name: Articles masonry grid
+* Plugin Name: Posts masonry grid
 * Plugin URI: https://github.com/Nyffels-IT/masonry-grid-wordpress
-* Description: A lightwight, open source masonry grid for your articles. Created and managed by Nyffels IT.
+* Description: A lightwight, open source masonry grid for your posts. Created and managed by Nyffels IT.
 * Version: 0.1.0
 * Requires at least: 6.0
 * Requires PHP: 8.0
