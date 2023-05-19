@@ -1,0 +1,52 @@
+.nyfit-masonry-grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+  grid-auto-rows: 20px;
+}
+
+.nyfit-masonry-grid-item {
+  background-color: #ffffff;
+}
+
+.nyfit-masonry-grid-photothumb {
+  width: 100%;
+}
+
+.nyfit-masonry-grid-title {
+  padding: 20px;
+}
+
+.nyfit-masonry-grid-title h3 {
+  font-size: 1.2em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.photo .title {
+  background-color: #f44336;
+}
+
+.nyfit-masonry-grid-desc {
+  padding: 10px 10px 5px 10px;
+}
+
+.nyfit-masonry-grid-desc img {
+  width: 50%;
+  margin: 0 10px 10px 0;
+  float: left;
+}
+
+.nyfit-masonry-grid-desc p {
+  margin-bottom: 10px;
+}
+
+.nyfit-masonry-grid-click-to-read {
+    margin-top: 0px;
+    padding: 0 20px 20px 20px;
+}
+
+.nyfit-masonry-grid-click-to-read p {
+    font-size: 1.5em;
+    color: white;
+}
