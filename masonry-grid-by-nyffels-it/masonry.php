@@ -3,7 +3,7 @@
 * Plugin Name: Masonry grid
 * Plugin URI: https://github.com/Nyffels-IT/masonry-grid-wordpress
 * Description: A lightwight, open source masonry grid for your posts. Created and managed by Nyffels IT.
-* Version: 0.0.3
+* Version: 1.0.0
 * Requires at least: 6.0
 * Requires PHP: 8.0
 * Author: Nyffels IT
@@ -23,14 +23,11 @@ function mgnyf_retrieve_monastry_grid($atts) {
     );
     $a = shortcode_atts($default, $atts);
 
-    echo '<script>console.log("The \"monastry grid\" plugin is an open sourced and free plugin created by Nyffels IT. Give us a visit at https://nyffels-it.be or contribute to the development of the plugin on the repository https://github.com/Nyffels-IT/masonry-grid-wordpress")</script>';
-    echo '<script>console.log("'.$a['category'].'")</script>';
     $args = array(
         'nopaging' => true,
         'category' => $a['category']
     );
     $posts = get_posts($args);
-    // mgnyf_log_as_json($posts); // This is for debug reasons only and returns the fetched posts in the console. 
     
     ob_start();
 
