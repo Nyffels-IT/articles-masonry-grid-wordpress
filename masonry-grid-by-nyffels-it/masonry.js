@@ -20,7 +20,6 @@ function resizeInstance(instance) {
 
 function startupLogic() {
     resizeAllGridItems();
-    console.log("Masonry grid script loaded");
 }
 
 document.addEventListener("DOMContentLoaded", startupLogic);
