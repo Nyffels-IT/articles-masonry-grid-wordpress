@@ -19,14 +19,15 @@ function mgnyf_retrieve_monastry_grid($atts) {
     $default = array(
         'background_color' => "#000000",
         'font_color' => "#FFFFFF",
-        'categories' => null
+        'category' => null
     );
     $a = shortcode_atts($default, $atts);
 
     echo '<script>console.log("The \"monastry grid\" plugin is an open sourced and free plugin created by Nyffels IT. Give us a visit at https://nyffels-it.be or contribute to the development of the plugin on the repository https://github.com/Nyffels-IT/masonry-grid-wordpress")</script>';
+    echo '<script>console.log("'.$a['category'].'")</script>';
     $args = array(
         'nopaging' => true,
-        'categories' => $a->categories
+        'category' => $a['category']
     );
     $posts = get_posts($args);
     // mgnyf_log_as_json($posts); // This is for debug reasons only and returns the fetched posts in the console. 
