@@ -17,3 +17,4 @@ Example with parameters: [masonry-grid background_color="#ff1100" font_color="#3
 ## Parameters
 background_color => Set the background color of the title. 
 font_color => Set the font color of the title. 
+category => Id of a category you want to display. 
